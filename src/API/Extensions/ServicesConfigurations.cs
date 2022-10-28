@@ -1,5 +1,7 @@
 ﻿using DataLayer.Repositories;
 using DataLayer.Repositories.Interfaces;
+using Domain.Profiles;
+using Domain.Profiles.Interfaces;
 using Domain.Services;
 using Domain.Services.Interfaces;
 using System.Diagnostics.CodeAnalysis;
@@ -12,6 +14,8 @@ namespace API.Extensions
         public static void AddDomainServices(this IServiceCollection services)
         {
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IImageService, ImageService>();
+            services.AddScoped<IImageProfile, ProductProfile>();
         }
 
         public static void AddDataLayerRepository(this IServiceCollection services)
