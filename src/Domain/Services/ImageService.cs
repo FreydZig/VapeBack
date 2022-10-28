@@ -17,7 +17,7 @@ namespace Domain.Services
             _imageProfile = imageProfile;
         }
 
-        public string Create(IFormFile file)
+        public async Task<string> Create(IFormFile file)
         {
             var imageProfile = _imageProfile.FirstOrDefault(profile =>
                        profile.ImageType == ImageType.Product);
@@ -27,7 +27,7 @@ namespace Domain.Services
 
             ValidateFileSize(file, imageProfile);
 
-            var image = Image.Load(file.OpenReadStream());
+            var image = await Image.LoadAsync(file.OpenReadStream());
 
             ValidateImageSize(image, imageProfile);
 
@@ -39,16 +39,13 @@ namespace Domain.Services
             string filePath;
             string fileName;
 
-            do
-            {
-                fileName = GenerateFileName(file);
-                filePath = Path.Combine(folderPath, fileName);
-            } while (File.Exists(filePath));
+            fileName = GenerateFileName(file);
+            filePath = Path.Combine(folderPath, fileName);
 
             Resize(image, imageProfile);
             Crop(image, imageProfile);
 
-            image.Save(filePath, new JpegEncoder { Quality = 75 });
+            await image.SaveAsync(filePath, new JpegEncoder { Quality = 75 });
 
             return Path.Combine(imageProfile.Folder, fileName);
         }
@@ -56,20 +53,10 @@ namespace Domain.Services
         private string GenerateFileName(IFormFile file)
         {
             var fileExtension = Path.GetExtension(file.FileName);
-            var fileName = Path.GetFileNameWithoutExtension(Path.GetRandomFileName());
+            var fileName = Guid.NewGuid();
 
             return $"{fileName}{fileExtension}";
         }
-
-        //private void ValidateExtension(IFormFile file, IImageProfile imageProfile)
-        //{
-        //    var fileExtension = Path.GetExtension(file.FileName);
-
-        //    if (imageProfile.AllowedExtensions.Any(ext => ext == fileExtension.ToLower()))
-        //        return;
-
-        //    throw new ImageProcessingException(Strings.WrongImageFormat);
-        //}
 
         private void ValidateFileSize(IFormFile file, IImageProfile imageProfile)
         {

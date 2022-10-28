@@ -16,11 +16,13 @@ namespace API.Extensions
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IImageService, ImageService>();
             services.AddScoped<IImageProfile, ProductProfile>();
+            services.AddScoped<IProductsService, ProductsService>();
         }
 
         public static void AddDataLayerRepository(this IServiceCollection services)
         {
             services.AddScoped<IUsersRepository, UsersRepository>();
+            services.AddScoped<IProductsRepository, ProductRepository>();
         }
     }
 }

@@ -10,9 +10,9 @@ namespace Domain.Profiles
 
         public string Folder => "Products";
 
-        public int Width => 100;
+        public int Width => 300;
 
-        public int Height => 100;
+        public int Height => 300;
 
         public int MaxSizeBytes => mb * 10;
     }

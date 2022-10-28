@@ -1,8 +1,7 @@
 using API.Extensions;
-using DataLayer.Repositories;
-using DataLayer.Repositories.Interfaces;
-using Domain.Services;
-using Domain.Services.Interfaces;
+using API.MapperStorage;
+using DataLayer;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,11 +11,16 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-//builder.Services.AddScoped<IUserService, UserService>();
-//builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+
+// получаем строку подключения из файла конфигурации
+string connection = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// добавляем контекст ApplicationContext в качестве сервиса в приложение
+builder.Services.AddDbContext<VapeContext>(options => options.UseSqlServer(connection));
 
 builder.Services.AddDomainServices();
 builder.Services.AddDataLayerRepository();
+builder.Services.AddAutoMapper(typeof(MapperProfile));
 
 var app = builder.Build();
 

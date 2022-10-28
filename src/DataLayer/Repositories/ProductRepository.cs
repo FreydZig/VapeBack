@@ -1,29 +1,38 @@
 ﻿using DataLayer.Entities;
 using DataLayer.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataLayer.Repositories
 {
-    //public class ProductRepository : IProductsRepository
-    //{
+    public class ProductRepository : IProductsRepository
+    {
 
-    //    private readonly VapeContext _context;
+        private readonly VapeContext _context;
 
-    //    public ProductRepository()
-    //    {
-    //        _context = new VapeContext();
-    //    }
+        public ProductRepository(VapeContext context)
+        {
+            _context = context;
+        }
 
-    //    public Task<Products> Create(Products products)
-    //    {
-    //        if (products != null && products.Image != null)
-    //        {
+        public async Task<Products> Create(Products products)
+        {
+            if (products == null)
+            {
+                throw new Exception("Product is incorrect!");
+            }
+            if (products.Image == null)
+            {
+                throw new Exception("Image is incorrect!");
+            }
+            await _context.Products.AddAsync(products);
+            await _context.SaveChangesAsync();
 
-    //        }
-    //    }
+            return products;
+        }
 
-    //    public Task<Products> Read(int productId)
-    //    {
-    //        throw new NotImplementedException();
-    //    }
-    //}
+        public Task<Products> Read(int productId)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

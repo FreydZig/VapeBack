@@ -8,9 +8,9 @@ namespace DataLayer.Repositories
     {
         private readonly VapeContext _context;
 
-        public UsersRepository()
+        public UsersRepository(VapeContext context)
         {
-            _context = new VapeContext();
+            _context = context;
         }
 
         public async Task<Users> Create(Users user)

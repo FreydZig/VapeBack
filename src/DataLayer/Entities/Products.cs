@@ -9,19 +9,19 @@ namespace DataLayer.Entities
 
         [Required]
         [StringLength(100)]
-        public string ProductName { get; set; }
+        public string Name { get; set; }
 
         [Required]
         public int Price { get; set; }
 
-        public int SubtypeId { get; set; }
+        public int? SubtypeId { get; set; } = null;
 
-        public int TypeId { get; set; }
+        public int? TypeId { get; set; } = null;
 
         [Required]
         [StringLength(100)]
         public string Image { get; set; }
 
-        public string? Description { get; set; }
+        public string? Description { get; set; } =  null;
     }
 }

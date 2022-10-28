@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "nzO2VWNl3bMmGQRipfVFqABV7DzUgm5j7i3h1NfQ0R+IVJB0/TP99ac3HKPUjI6dr1dhlZ021NjNgevaR/o5ow==",
+  "dgSpecHash": "FMPoxiuWAQ0S84r3jCZ2mnFreERm2X9UjcO7a7zbV2jorZNEms2Ki1lYko+9z9If7E9lVb/l1qwdW7Ur2ZL1fQ==",
   "success": true,
   "projectFilePath": "C:\\Coding\\Vape\\server\\VapeBack\\src\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\FreydZig\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\FreydZig\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\FreydZig\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\FreydZig\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\FreydZig\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\FreydZig\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
-    "C:\\Users\\FreydZig\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\FreydZig\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\FreydZig\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\FreydZig\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\FreydZig\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",

@@ -69,3 +69,7 @@ C:\Coding\Vape\server\VapeBack\src\API\bin\Debug\net6.0\SixLabors.ImageSharp.dll
 C:\Coding\Vape\server\VapeBack\src\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Coding\Vape\server\VapeBack\src\API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Coding\Vape\server\VapeBack\src\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Coding\Vape\server\VapeBack\src\API\bin\Debug\net6.0\AutoMapper.dll
+C:\Coding\Vape\server\VapeBack\src\API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Coding\Vape\server\VapeBack\src\API\bin\Debug\net6.0\appsettings .Development.Development.json
+C:\Coding\Vape\server\VapeBack\src\API\bin\Debug\net6.0\appsettings .Development.json
