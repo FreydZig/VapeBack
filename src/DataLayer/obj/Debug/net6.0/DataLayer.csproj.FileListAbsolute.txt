@@ -1,0 +1,12 @@
+C:\Coding\Vape\server\VapeBack\src\DataLayer\bin\Debug\net6.0\DataLayer.deps.json
+C:\Coding\Vape\server\VapeBack\src\DataLayer\bin\Debug\net6.0\DataLayer.dll
+C:\Coding\Vape\server\VapeBack\src\DataLayer\bin\Debug\net6.0\DataLayer.pdb
+C:\Coding\Vape\server\VapeBack\src\DataLayer\obj\Debug\net6.0\DataLayer.csproj.AssemblyReference.cache
+C:\Coding\Vape\server\VapeBack\src\DataLayer\obj\Debug\net6.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coding\Vape\server\VapeBack\src\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfoInputs.cache
+C:\Coding\Vape\server\VapeBack\src\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfo.cs
+C:\Coding\Vape\server\VapeBack\src\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Coding\Vape\server\VapeBack\src\DataLayer\obj\Debug\net6.0\DataLayer.dll
+C:\Coding\Vape\server\VapeBack\src\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
+C:\Coding\Vape\server\VapeBack\src\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+C:\Coding\Vape\server\VapeBack\src\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll
